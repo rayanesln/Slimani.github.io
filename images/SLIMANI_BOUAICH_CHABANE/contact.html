@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Slimani Rayane, Bouaich Ramzi, Chabane Akli" />
+    <title>Contact - Magic Match</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/logo.jpg" />
+</head>
+<body>
+    <header>
+        <h1>Contactez-nous</h1>
+        <div class="header-sub"><a href="index.html">Accueil</a> &gt; Contact</div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="equipe.html">L'Équipe</a></li>
+                <li><a href="pouvoirs.html">Les Pouvoirs</a></li>
+                <li><a href="technique.html">Technique</a></li>
+                <li><a href="regles.html">Règles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <h2>Informations de Contact</h2>
+            <p>Pour toute question relative au projet, vous pouvez nous contacter via le département informatique.</p>
+
+            <address style="background: #e0f2f1; padding: 20px; border-left: 5px solid #004d40; margin-bottom: 30px;">
+                <strong>Département Sciences Informatiques</strong><br />
+                CY Cergy Paris Université<br />
+                2 avenue Adolphe Chauvin<br />
+                95302 Cergy-Pontoise Cedex<br />
+                France
+            </address>
+
+            <h3>Formulaire d'envoi</h3>
+            <form action="#" method="post">
+                <p>
+                    <label for="nom">Votre Nom :</label><br />
+                    <input type="text" id="nom" name="nom" required="required" style="width: 50%; padding: 8px;" />
+                </p>
+                <p>
+                    <label for="email">Votre Email :</label><br />
+                    <input type="email" id="email" name="email" required="required" style="width: 50%; padding: 8px;" />
+                </p>
+                <p>
+                    <label for="sujet">Sujet :</label><br />
+                    <select id="sujet" name="sujet" style="padding: 8px;">
+                        <option value="info">Demande d'information</option>
+                        <option value="bug">Signaler un bug</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="message">Votre Message :</label><br />
+                    <textarea id="message" name="message" rows="6" cols="50" style="padding: 8px;"></textarea>
+                </p>
+                <p>
+                    <button type="submit" class="btn">Envoyer le message</button>
+                </p>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Slimani, Bouaich, Chabane.</p>
+        <p><a href="#">Haut de page</a></p>
+    </footer>
+</body>
+</html>
