@@ -1,56 +1,109 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Les ordinateurs - Accueil</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.png">
+    <meta charset="UTF-8" />
+    <meta name="author" content="Slimani Rayane, Bouaich Ramzi, Chabane Akli" />
+    <meta name="description" content="Site du projet GLP Football Simulation Magic Match" />
+    <title>Magic Match - Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/logo.jpg" />
+    
+    <style>
+        .intro-text {
+            font-size: 1.2em;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>L'ordinateur : Définition et utilité</h1>
+        <h1>Projet GLP : Football Simulation</h1>
+        <div class="header-sub">Accueil</div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="equipe.html">L'Équipe</a></li>
+                <li><a href="pouvoirs.html">Les Pouvoirs</a></li>
+                <li><a href="technique.html">Technique</a></li>
+                <li><a href="regles.html">Règles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Définition</a></li>
-            <li><a href="architecture.html">Architecture</a></li>
-            <li><a href="materiel.html">Matériel & Logiciel</a></li>
-            <li><a href="categories.html">Catégories</a></li>
-            <li><a href="usages.html">Usages & Impact</a></li>
-            <li><a href="avenir.html">Avenir</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <div class="content-wrapper">
+            
+            <main>
+                <figure style="margin: 0 0 20px 0;">
+                    <a href="index.html">
+                        <img src="images/logo.jpg" alt="Logo Magic Match" style="max-width: 150px; border: 1px solid #ccc; padding: 5px;" />
+                    </a>
+                    <figcaption>Logo officiel du projet (Retour Accueil)</figcaption>
+                </figure>
 
-    <main>
-        <section>
-            <p>L’ordinateur est une <strong>machine électronique</strong> capable de recevoir, traiter, stocker et transmettre des informations. Il fonctionne grâce à des programmes appelés logiciels. Depuis son invention, l’ordinateur a <em>profondément</em> transformé la manière dont les humains travaillent.</p>
-        </section>
+                <section id="presentation" style="border-bottom: 1px dashed #ccc; padding-bottom: 20px;">
+                    <h2>Introduction au Projet</h2>
+                    <p class="intro-text">Bienvenue sur le site officiel de <strong>Magic Match</strong>, une simulation sportive autonome développée dans le cadre de l'UE Génie Logiciel.</p>
+                    
+                    <article>
+                        <h3>Le Concept</h3>
+                        <p>L'objectif n'est pas de créer un simple jeu d'arcade, mais un <em>simulateur tactique</em>. Le logiciel gère de manière autonome deux équipes de 11 joueurs.</p>
+                        <p>La particularité réside dans l'ajout de <strong>Super-Pouvoirs</strong> qui viennent briser la linéarité du match et forcer le moteur de jeu à s'adapter.</p>
+                    </article>
+                </section>
 
-        <section>
-            <p>On les retrouve aujourd'hui partout : dans les foyers, les écoles et les entreprises. C'est un outil <em>essentiel</em> pour la gestion, la communication et le design.</p>   
-        </section>
+                <section id="contexte">
+                    <h2>Contexte et Motivation</h2>
+                    <p>Le projet se concentre sur la phase de match unique ("One-shot match"). L'utilisateur configure les tactiques et regarde l'IA jouer.</p>
+                    <p>Nos motivations principales sont :</p>
+                    <ul>
+                        <li>L'intérêt pour l'Algorithmique des Agents autonomes.</li>
+                        <li>La complexité de la Gestion d'État (State Management).</li>
+                        <li>L'aspect ludique des pouvoirs magiques dans le sport.</li>
+                    </ul>
+                </section>
 
-        <figure>
-            <img src="images/image1.png" alt="Exemple d’un ordinateur personnel" width="300">
-            <figcaption>Exemple d’un ordinateur personnel</figcaption>
-        </figure>
+                <section id="liens-utiles">
+                    <h2>Ressources Documentaires</h2>
+                    <p>Voici les références techniques et institutionnelles utilisées pour le projet :</p>
+                    <ul>
+                        <li><a href="GLP_FootballSimulation_spec.pdf" target="_blank">Télécharger le Cahier des Charges (PDF)</a></li>
+                        
+                        <li><a href="https://www.cyu.fr" target="_blank">Site officiel de CY Cergy Paris Université</a></li>
+                        
+                        <li><a href="https://cours.cyu.fr/course/view.php?id=3162" target="_blank">Accès au cours de Web (Moodle)</a></li>
 
-        <section>
-            <h2>Organisation du site</h2>
-            <p>Voici le plan de navigation de ce mini-site :</p>
-            <figure>
-                <img src="images/plan_site.png" alt="Plan du site réalisé sous Dia" width="700">
-                <figcaption>Plan du site (Arborescence)</figcaption>
-            </figure>
-        </section>
+                        <li><a href="https://fr.wikipedia.org/wiki/Football#Règles_du_jeu" target="_blank">Rappel des Règles du Football (Wikipédia)</a></li>
 
-    </main>
+                        <li><a href="https://www.google.com/search?q=intelligence+artificielle+football" target="_blank">Recherche : "IA dans le football" (Google)</a></li>
+                    </ul>
+                </section>
+            </main>
 
-    <footer id="pied-page">
-        <p class="texte-fin">Mini-site HTML5 - TD2</p>
+            <aside>
+                <h3>Navigation Rapide</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#presentation">Présentation</a></li>
+                        <li><a href="#contexte">Contexte</a></li>
+                        <li><a href="#liens-utiles">Liens Utiles</a></li>
+                        <li><a href="equipe.html">Voir l'équipe</a></li>
+                    </ul>
+                </nav>
+                <hr />
+                <p>N'oubliez pas de consulter la page <a href="regles.html">Règles</a> pour comprendre le fonctionnement.</p>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Slimani, Bouaich, Chabane.</p>
+        <p>Département Sciences Informatiques - CY Cergy Paris Université.</p>
+        <p><a href="#">Haut de page</a></p>
     </footer>
 
 </body>
